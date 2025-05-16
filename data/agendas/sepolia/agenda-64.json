@@ -1,0 +1,67 @@
+{
+    "id": 64,
+    "title": "Test Agenda",
+    "description": "<h1>Limit withdrawal delay period by operator</h1><h3>Simple Summary</h3><p>Fix overflow vulnerability and limit Operator's ability to set custom withdrawal delay period to at most 30 days.</p><h3>Motivation</h3><p>Community member, Black Cow, identified overflow attack for withdraw delay that allows the operator to basically reduce the withdraw delay time to 0, effectively removing the withdraw delay time. Tokamak Network contract team verified the result, and also identified that the function can be abused to lock staked TON for very long time (~10^32 years), permanently locking staked TON.</p><h3>On-Chian Effects</h3><p>This proposal will limit operator account's ability of setting withdraw delay for their layer2 to maximum of 216000 blocks (~ 30 days).</p><p>require(withdrawalDelay_ &gt; globalWithdrawalDelay &amp;&amp; withdrawalDelay_ &lt;= MAX_DELAY_BLOCKS, \"Not acceptable\");</p><p>withdrawalDelay[l2chain] variable assignment check</p><h3>References</h3><ul><li><p>Implementation: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/tokamak-network/ton-staking-v2/blob/f9e330c904819605202064a143789fa97b27c1c6/contracts/stake/managers/DepositManager_setWithdrawalDelay.sol#L38-L44\">setWithdrawalDelay</a></p></li><li><p>Tests: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/tokamak-network/ton-staking-v2/issues/33#issuecomment-2259514627\">Sepolia</a></p></li><li><p>Discussion: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://github.com/tokamak-network/ton-staking-v2/issues/33\">Github issue</a></p></li><li><p>Bounty: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://explorer.titan.tokamak.network/tx/0x65b951c064ebd4df0aaa94945bb39fc67d1747524cb18f656c31dd6fac92f190\">3,300 TON</a> has been paid as bounty</p></li></ul><h3>Copyright</h3><p>Copyright and related rights waived via <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://creativecommons.org/publicdomain/zero/1.0/\">CC0</a>.</p>",
+    "network": "sepolia",
+    "transaction": "0xf011feaead3f5b09beaa45d1de573f38aebdcbe0a0920ed8c8a42a2e806b2d5c",
+    "creator": {
+      "address": "0xc1eba383D94c6021160042491A5dfaF1d82694E6",
+      "signature": "0xbed3d0da012a44827cdc530ec68198ff4d4034e68afc44d89b9517e85cf34d7e6adf261df4a07a512fee9c659ce5d5f72465a3f777bca97759fc8fec1c830a5c1b"
+    },
+    "actions": [
+      {
+        "title": "updateSeigniorageLayer(address)",
+        "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+        "method": "updateSeigniorageLayer(address)",
+        "calldata": "0x1e1f0b60000000000000000000000000f078ae62ea4740e19ddf6c0c5e17ecdb820bbee1",
+        "abi": [
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "layer2",
+                "type": "address"
+              }
+            ],
+            "name": "updateSeigniorageLayer",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          }
+        ],
+        "sendEth": false,
+        "id": "1747210004619",
+        "type": "Custom"
+      },
+      {
+        "title": "updateSeigniorage()",
+        "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+        "method": "updateSeigniorage()",
+        "calldata": "0x764a7856",
+        "abi": [
+          {
+            "inputs": [],
+            "name": "updateSeigniorage",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          }
+        ],
+        "sendEth": false,
+        "id": "1747210034678",
+        "type": "Custom"
+      }
+    ]
+}
