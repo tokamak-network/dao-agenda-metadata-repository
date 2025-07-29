@@ -1,0 +1,37 @@
+{
+  "id": 200,
+  "title": "Nam Pham Proposer",
+  "description": "TON will be reached 10$ in Q3 2025",
+  "network": "sepolia",
+  "transaction": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+  "creator": {
+    "address": "0xbee60ccf02f4e8bc296b6f4865d1afe0eb19d1f2",
+    "signature": "0xf335f94a8717a289fd56c5ddf33498542aab8fe0f75f902456c906dfbc425f534bc20dc16482aec5f2d476af3316788d31b8199f49640c55c12360d2c63687da1c"
+  },
+  "createdAt": "2025-07-29T13:33:24.00Z",
+  "snapshotUrl": "https://snapshot.org/#/mydao.eth/proposal/1",
+  "discourseUrl": "https://forum.mydao.com/t/proposal-1",
+  "actions": [
+    {
+      "title": "updateSeigniorage()",
+      "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+      "method": "updateSeigniorage()",
+      "calldata": "0x764a7856",
+      "abi": [
+        {
+          "inputs": [],
+          "name": "updateSeigniorage",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ]
+    }
+  ]
+}
