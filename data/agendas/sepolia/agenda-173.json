@@ -1,0 +1,38 @@
+{
+  "id": 173,
+  "title": "test",
+  "description": "https://github.com",
+  "network": "sepolia",
+  "transaction": "0x5a99ae27efc9e095370fc04447a947e6a2d1aa7325209edc2726f3b240bda66c",
+  "creator": {
+    "address": "0x73A7F5D50aD88FcaAe05Da093316BF7d99a27e45",
+    "signature": "0xa16309cebfa85d2a1bb99be1d476e27c8914969f1c51932cb0533a35e03ceb540ee39a476d3055f579e165ee4e67117e18513c880b96144501ad293a92bd24a01b"
+  },
+  "actions": [
+    {
+      "title": "addAdmin(address)",
+      "contractAddress": "0x3268e4D8276c58A806E83B3B080Cf29514A837cf",
+      "method": "addAdmin(address)",
+      "calldata": "0x70480275000000000000000000000000268038d08c879ff5607d59cd61c9903ecbb3c2ed",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "addAdmin",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ],
+      "sendEth": false
+    }
+  ],
+  "createdAt": "2025-07-30T07:40:34.00Z",
+  "snapshotUrl": "https://example.com",
+  "discourseUrl": ""
+}
