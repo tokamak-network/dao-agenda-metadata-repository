@@ -1,0 +1,60 @@
+{
+  "id": 171,
+  "title": "Test: Adjust PowerTON Seigniorage Rate to 40%",
+  "description": "https://github.com/tokamak-network/TOIPs/blob/main/test-powerTON-seig-rate-adjustment.md",
+  "network": "sepolia",
+  "transaction": "0x363ab352cd145bfaffcbf366562e35bc527c70e543ab2b2a7dcbf2713199140b",
+  "creator": {
+    "address": "0xB68AA9E398c054da7EBAaA446292f611CA0CD52B",
+    "signature": "0x0b76ca9f09dacc26565b9a860ee79357633f345d1929c8c9d630cd93e9888c1d06d0055d9a8743c1ee9a2a2a026216bd7e0a71ca30e9bc906bd07cdeb631c21d1b"
+  },
+  "actions": [
+    {
+      "title": "setDaoSeigRate(uint256)",
+      "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+      "method": "setDaoSeigRate(uint256)",
+      "calldata": "0x03e1cc270000000000000000000000000000000000000000014adf4b7320334b90000000",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "daoSeigRate_",
+              "type": "uint256"
+            }
+          ],
+          "name": "setDaoSeigRate",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ],
+      "sendEth": false
+    },
+    {
+      "title": "setPowerTONSeigRate(uint256)",
+      "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+      "method": "setPowerTONSeigRate(uint256)",
+      "calldata": "0x9c877e4700000000000000000000000000000000000000000052b7d2dcc80cd2e4000000",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "powerTONSeigRate_",
+              "type": "uint256"
+            }
+          ],
+          "name": "setPowerTONSeigRate",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ],
+      "sendEth": false
+    }
+  ],
+  "createdAt": "2025-07-29T19:56:07.00Z",
+  "snapshotUrl": "https://snapshot.org/#/tokamak-dao.eth/proposal/0xabcdef1234567890",
+  "discourseUrl": ""
+}
