@@ -1,0 +1,25 @@
+{
+  "id": 197,
+  "title": "test-0822-1",
+  "description": "test ",
+  "network": "sepolia",
+  "transaction": "0x7e6a94affbc4f0d34fd0c2fe8d9f258ce983cfd5a26a2674129b7e247fa2436b",
+  "creator": {
+    "address": "0xc1eba383d94c6021160042491a5dfaf1d82694e6",
+    "signature": "0x9448b2c729028493231391625141f5ff5902471fcf02de0f10d4441deab36fee39e0278691d3a8ff688b17b2e19c06f54aaaf22d4a5177fe0cfbff4b1eadbbb31b"
+  },
+  "actions": [
+    {
+      "title": "updateSeigniorageLayer(address)",
+      "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+      "method": "updateSeigniorageLayer(address)",
+      "calldata": "0x1e1f0b60000000000000000000000000f078ae62ea4740e19ddf6c0c5e17ecdb820bbee1",
+      "abi": [],
+      "sendEth": false,
+      "id": "1",
+      "type": "call"
+    }
+  ],
+  "createdAt": "2025-08-22T08:29:08.200Z",
+  "snapshotUrl": "https://github.com/tokamak-network/ton-staking-v2/issues/311"
+}
