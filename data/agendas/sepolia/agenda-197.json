@@ -1,0 +1,21 @@
+{
+  "id": 197,
+  "title": "Good-Test1",
+  "description": "updateSeigniorageLayer Poseidon",
+  "network": "sepolia",
+  "transaction": "0x7e6a94affbc4f0d34fd0c2fe8d9f258ce983cfd5a26a2674129b7e247fa2436b",
+  "actions": [
+    {
+      "title": "updateSeigniorageLayer",
+      "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+      "method": "updateSeigniorageLayer(address)",
+      "calldata": "0x1e1f0b60000000000000000000000000f078ae62ea4740e19ddf6c0c5e17ecdb820bbee1"
+    }
+  ],
+  "snapshotUrl": "https://github.com/tokamak-network/ton-staking-v2/issues/311",
+  "creator": {
+    "address": "0xc1eba383D94c6021160042491A5dfaF1d82694E6",
+    "signature": "0x7d4dd9b72ad77d3f9ac0f12f25fbcb21ec88d48e16f0acde019bcead72f65e2f10d4d339c0fb3784027ac5d94abdef3d0a594b26bd70c2967a62df2864da16581b"
+  },
+  "createdAt": "2025-09-04T02:08:39.739Z"
+}
