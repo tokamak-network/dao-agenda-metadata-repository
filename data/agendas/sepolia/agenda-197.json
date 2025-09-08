@@ -1,0 +1,36 @@
+{
+  "id": 197,
+  "title": "Title",
+  "description": "Description",
+  "network": "sepolia",
+  "transaction": "0x7e6a94affbc4f0d34fd0c2fe8d9f258ce983cfd5a26a2674129b7e247fa2436b",
+  "creator": {
+    "address": "0xc1eba383D94c6021160042491A5dfaF1d82694E6",
+    "signature": "0xb261a3a998c17a730fcb723c9ff27f3d2cf67de66db48196897068dbb14a07d56882b5e7dfa313c0b0390c974202c0ed9413cbb121fd29598d866981f91dad991b"
+  },
+  "actions": [
+    {
+      "contractAddress": "0x2320542ae933FbAdf8f5B97cA348c7CeDA90fAd7",
+      "calldata": "0x1e1f0b60000000000000000000000000f078ae62ea4740e19ddf6c0c5e17ecdb820bbee1",
+      "title": "Action 1",
+      "method": "updateSeigniorageLayer(address)",
+      "abi": [
+        {
+          "name": "updateSeigniorageLayer",
+          "type": "function",
+          "inputs": [
+            {
+              "name": "param0",
+              "type": "address",
+              "internalType": "address"
+            }
+          ],
+          "outputs": [],
+          "stateMutability": "nonpayable"
+        }
+      ]
+    }
+  ],
+  "snapshotUrl": "https://github.com/tokamak-network/ton-staking-v2/issues/311",
+  "createdAt": "2025-09-08T07:01:20.238Z"
+}
